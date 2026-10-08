@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="MauiSchoolAssignments.Views.WeaponListPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Weapon List">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="10">
+
+            <Label
+                Text="Weapon List"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout
+                x:Name="listWeapons"
+                Spacing="8" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="MauiSchoolAssignments.Views.WeaponSearchPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Search by Weapons">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="15">
+
+            <Label
+                Text="Search Users by Weapons"
+                FontSize="26"
+                FontAttributes="Bold" />
+
+            <HorizontalStackLayout>
+                <CheckBox x:Name="PistolCheckBox" />
+
+                <Label
+                    Text="Pistol"
+                    VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <CheckBox x:Name="RifleCheckBox" />
+
+                <Label
+                    Text="Rifle"
+                    VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <CheckBox x:Name="ShotgunCheckBox" />
+
+                <Label
+                    Text="Shotgun"
+                    VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Search Users"
+                Clicked="SearchButton_Clicked" />
+
+            <Label
+                x:Name="SearchResultLabel"
+                FontSize="18" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

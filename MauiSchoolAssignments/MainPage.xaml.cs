@@ -1,24 +1,41 @@
-﻿namespace MauiSchoolAssignments
+﻿using MauiSchoolAssignments.Views;
+
+namespace MauiSchoolAssignments;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage()
     {
-        int count = 0;
+        InitializeComponent();
+    }
 
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+    private async void AgePageButton_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(AgePage));
+    }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            count++;
+    private async void CandlesPageButton_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(CandlesPage));
+    }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+    private async void UserSearchButton_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(UserSearchPage));
+    }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+    private async void WeaponSearchButton_Clicked(object? sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(WeaponSearchPage));
+    }
+
+    private async void SliderCandlesButton_Clicked(object? sender,EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(SliderCandlesPage));
+    }
+
+    private async void WeaponListButton_Clicked(object? sender,EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(WeaponListPage));
     }
 }

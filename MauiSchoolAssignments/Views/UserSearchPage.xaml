@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="MauiSchoolAssignments.Views.UserSearchPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="User Search">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="15">
+
+            <Label
+                Text="Search Users"
+                FontSize="28"
+                FontAttributes="Bold" />
+
+            <Entry
+                x:Name="SearchEntry"
+                Placeholder="Enter a user name" />
+
+            <Button
+                Text="Search"
+                Clicked="SearchButton_Clicked" />
+
+            <Label
+                x:Name="ResultLabel"
+                FontSize="18" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
